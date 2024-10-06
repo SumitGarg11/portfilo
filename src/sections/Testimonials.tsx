@@ -49,25 +49,29 @@ export const TestimonialsSection = () => {
           title="What Clients Say About Me "
           description=" Don't just take my word for it. See what my clients have to say about my work."
         />
-        <div className=" mt-12 ">
-          {testimonials.map((testimonials) => (
-            <Card key={testimonials.name}>
-              <div className="flex gap-4 items-center ">
-                <div className="size-14 bg-gray-700 inline-flex items-center justify-center rounded-full">
-                  <Image
-                    src={testimonials.avatar}
-                    alt={testimonials.name}
-                    className="max-h-full"
-                  />
+        <div className=" mt-16 flex ">
+          <div className="flex flex-none ">
+            {testimonials.map((testimonials) => (
+              <Card key={testimonials.name} className="max-w-xs">
+                <div className="flex gap-4 items-center ">
+                  <div className="size-14 bg-gray-700 inline-flex items-center justify-center rounded-full">
+                    <Image
+                      src={testimonials.avatar}
+                      alt={testimonials.name}
+                      className="max-h-full"
+                    />
+                  </div>
+                  <div>
+                    <div className="font-semibold ">{testimonials.name}</div>
+                    <div className="text-sm text-white/40">
+                      {testimonials.position}
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <div className="font-semibold " >{testimonials.name}</div>
-                  <div className="text-sm text-white/40" >{testimonials.position}</div>
-                </div>
-              </div>
-              <p className="mt-4 text-sm">{testimonials.text}</p>
-            </Card>
-          ))}
+                <p className="mt-4 text-sm">{testimonials.text}</p>
+              </Card>
+            ))}
+          </div>
         </div>
       </div>
     </div>
