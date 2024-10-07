@@ -680,9 +680,6 @@ video {
 .relative {
   position: relative;
 }
-.sticky {
-  position: sticky;
-}
 .inset-0 {
   inset: 0px;
 }
@@ -894,19 +891,6 @@ video {
 }
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-@keyframes move-left {
-
-  0% {
-    transform: translateX(0%);
-  }
-
-  100% {
-    transform: translateX(-50%);
-  }
-}
-.animate-move-left {
-  animation: move-left 1s linear infinite", ;
 }
 @keyframes ping-large {
 
@@ -1137,9 +1121,6 @@ video {
 }
 .pb-16 {
   padding-bottom: 4rem;
-}
-.pr-4 {
-  padding-right: 1rem;
 }
 .pr-6 {
   padding-right: 1.5rem;
