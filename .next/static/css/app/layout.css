@@ -1016,6 +1016,14 @@ video {
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -1104,6 +1112,15 @@ video {
 }
 .opacity-5 {
   opacity: 0.05;
+}
+.outline {
+  outline-style: solid;
+}
+.outline-2 {
+  outline-width: 2px;
+}
+.outline-white\/10 {
+  outline-color: rgb(255 255 255 / 0.1);
 }
 .backdrop-blur {
   --tw-backdrop-blur: blur(8px);
