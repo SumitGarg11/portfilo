@@ -80,15 +80,17 @@ export const AboutSection = () => {
           description="Learn more about who I am, what I do, and what inspires me ."
         />
         <div className="mt-20">
-          <Card>
-            <div>
-              <div  className="inline-flex  items-center gap-2 ">
+          <Card className="h-[320px]">
+            <div className="flex flex-col">
+              <div  className="inline-flex  items-center gap-2  ">
                 <StarIcon className= "size-9  text-emerald-300 "/>
                 <h3 className="font-serif  text-3xl ">My Reads</h3>
               </div>
-              <p className="text-sm text-white/60">Explore the books shaping my perspectives.</p>
+              <p className="text-sm text-white/60 mt-2">Explore the books shaping my perspectives.</p>
             </div>
+            <div className="w-40 mx-auto mt-8" >
             <Image src={bookImage} alt="Book cover" />
+            </div>
           </Card>
           <Card>
             <div>
